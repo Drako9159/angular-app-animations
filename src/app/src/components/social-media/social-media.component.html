@@ -1,1 +1,12 @@
-<p>social-media works!</p>
+<app-main-container>
+
+    <div class="social-media-container">
+        <h2>My social media</h2>
+        <div class="social-media-elements">
+            @for(socialMediaElement of socialMediaList; track socialMediaElement.name){
+            <app-social-media-element wobble [socialMediaElement]="socialMediaElement" />
+            }
+        </div>
+
+    </div>
+</app-main-container>
